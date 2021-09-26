@@ -11,8 +11,7 @@ function createEmployeeRecord([firstName,lastName,title,payRate]){
 };
 
 function createEmployeeRecords(arrayOfNames){
-  arrayOfNames.forEach(array => {
-    let fullRecords = createEmployeeRecord(array)
-    return fullRecords;
+  return arrayOfNames.map(array => {
+  createEmployeeRecord(array)
   })
 };
